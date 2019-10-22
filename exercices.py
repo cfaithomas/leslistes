@@ -28,15 +28,20 @@ cpt2=0;
 #********************message invités restants*****************/
 while(cpt2<len(listeinvités)):
     print(listeinvités[cpt2],"Tu es toujours invité")
+    cpt2+=1
 
 #***********Affiche la liste des invités**********************
 
 while(i<len(listeinvités)):
     print(listeinvités[i]+", je t'invites à diner demain")
     i+=1
+#****************suppression des invités************************
+i=len(listeinvités)-1
+while i>=0:
+    del listeinvités[i]
+    i-=1
 
-
-
+print(listeinvités);  #vérification
 
 
 
